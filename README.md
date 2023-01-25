@@ -6,7 +6,7 @@ The purpose of this project is to give an interface to work with holidays using 
 ## Install
 
 ```
-npm i us-holidays-helper
+npm i us-holidays-helper   
 ```
 
 ## Table of contents
