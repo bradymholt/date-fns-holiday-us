@@ -11,7 +11,7 @@ const generatedDocsPath = path.join(basePath, "docs");
 const generatedFilePath = path.join(generatedDocsPath, "README.md");
 const readmePath = path.join(basePath, "README.md");
 
-console.log(chalk.green("1. Parsing Typescript source..."));
+console.log(chalk.green("1. Parsing TypeScript source..."));
 exec(
   "npx typedoc  --readme none --hideBreadcrumbs --out docs src",
   {
@@ -23,7 +23,7 @@ exec(
       console.error(chalk.red(err.message));
     } else {
       console.log(chalk.green("2. Generating markdown..."));
-      const { name, description, version, author, peerDependencies } = pkg;
+      const { name, description } = pkg;
       let apiDoc = fs.readFileSync(generatedFilePath, { encoding: "utf8" });
       apiDoc = apiDoc.replace("## Index", "## API");
       apiDoc = apiDoc.replace(`# ${name}`, "");
@@ -33,10 +33,7 @@ exec(
         readmePath,
         readmeTemplate({
           name,
-          description,
-          peerDependencies,
-          version,
-          author,
+          description,          
           content: apiDoc,
         })
       );

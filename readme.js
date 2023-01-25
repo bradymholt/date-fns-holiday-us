@@ -1,4 +1,4 @@
-module.exports = ({ name, description, author, content, peerDependencies }) => `
+module.exports = ({ name, description, content }) => `
 # ${name}
 
 ${description.replace("date-fns", "`date-fns`")}
@@ -6,7 +6,7 @@ ${description.replace("date-fns", "`date-fns`")}
 ## Install
 
 \`\`\`
-npm i ${name}}
+npm i ${name}
 \`\`\`
 
 ${content}

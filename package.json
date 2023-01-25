@@ -1,8 +1,8 @@
 {
-  "name": "date-fns-holiday-us",
+  "name": "us-holidays-helper",
   "description": "The purpose of this project is to give an interface to work with holidays using date-fns",
-  "version": "1.1.0",
-  "author": "Jon Stuebe",
+  "version": "1.0.0",
+  "author": "Original: Jon Stuebe / Modified: Brady Holt",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
@@ -22,7 +22,7 @@
     "holidays"
   ],
   "repository": {
-    "url": "https://github.com/jonstuebe/date-fns-holiday-us"
+    "url": "https://github.com/bradymholt/us-holidays-helper"
   },
   "files": [
     "dist"
@@ -33,11 +33,11 @@
     "test": "jest",
     "lint": "eslint ./src",
     "docs": "node scripts/docs",
-    "prepublishOnly": "yarn build && yarn docs"
+    "prepublishOnly": "npm run build && npm run docs"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint"
+      "pre-commit": "npm run lint"
     }
   },
   "prettier": {
