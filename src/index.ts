@@ -15,8 +15,8 @@ export type Holiday =
   | "easter"
   | "halloween"
   | "valentinesDay"
-  | "mothersDay"
-  | "columbusDay"
+  | "mothersDay"  
+  | "indigenousPeoplesDay"
   | "independenceDay"
   | "presidentsDay"
   | "laborDay"
@@ -84,7 +84,7 @@ export function getEaster(year: number) {
   return new Date(year, n - 1, p + 1);
 }
 
-export function getColumbusDay(year: number) {
+export function getIndigenousPeoplesDay(year: number) {
   return addWeeks(getFirstOccurence(new Date(year, 9), 1), 1);
 }
 
@@ -201,8 +201,8 @@ export function getHolidays(year: number): Holidays {
       bankHoliday: false,
       federal: false,
     },
-    columbusDay: {
-      date: getColumbusDay(year),
+    indigenousPeoplesDay: {
+      date: getIndigenousPeoplesDay(year),
       bankHoliday: true,
       federal: true,
     },

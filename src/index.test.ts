@@ -5,7 +5,7 @@ import {
   getHalloween,
   getValentinesDay,
   getMothersDay,
-  getColumbusDay,
+  getIndigenousPeoplesDay,
   getIndependenceDay,
   getPresidentsDay,
   getLaborDay,
@@ -23,7 +23,7 @@ import {
   isBankHoliday,
   getObservedHolidays,
   getFederalHolidays,
-  isFederalHoliday,
+  isFederalHoliday,  
 } from "./index";
 
 const dateFormat = "MM-dd-y";
@@ -95,7 +95,7 @@ describe("getBankHolidays", () => {
       }, {})
     ).toEqual({
       christmas: { date: "12-25-2020" },
-      columbusDay: { date: "10-12-2020" },
+      indigenousPeoplesDay: { date: "10-12-2020" },
       independenceDay: { date: "07-04-2020" },
       presidentsDay: { date: "02-17-2020" },
       laborDay: { date: "09-07-2020" },
@@ -121,8 +121,8 @@ describe("getFederalHolidays", () => {
         };
       }, {})
     ).toEqual({
-      christmas: { date: "12-25-2022" },
-      columbusDay: { date: "10-10-2022" },
+      christmas: { date: "12-25-2022" },      
+      indigenousPeoplesDay: { date: "10-10-2022" },        
       juneteenth: { date: "06-19-2022" },
       independenceDay: { date: "07-04-2022" },
       laborDay: { date: "09-05-2022" },
@@ -189,12 +189,12 @@ describe("getEaster", () => {
   });
 });
 
-describe("getColumbusDay", () => {
+describe("getIndigenousPeoplesDay", () => {
   it("returns correct date", () => {
-    expect(format(getColumbusDay(2020), dateFormat)).toEqual("10-12-2020");
-    expect(format(getColumbusDay(2021), dateFormat)).toEqual("10-11-2021");
-    expect(format(getColumbusDay(2022), dateFormat)).toEqual("10-10-2022");
-    expect(format(getColumbusDay(2023), dateFormat)).toEqual("10-09-2023");
+    expect(format(getIndigenousPeoplesDay(2020), dateFormat)).toEqual("10-12-2020");
+    expect(format(getIndigenousPeoplesDay(2021), dateFormat)).toEqual("10-11-2021");
+    expect(format(getIndigenousPeoplesDay(2022), dateFormat)).toEqual("10-10-2022");
+    expect(format(getIndigenousPeoplesDay(2023), dateFormat)).toEqual("10-09-2023");
   });
 });
 

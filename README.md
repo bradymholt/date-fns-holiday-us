@@ -26,7 +26,7 @@ npm i date-fns-holiday-us date-fns
 
 - [getBankHolidays](README.md#getbankholidays)
 - [getChristmas](README.md#getchristmas)
-- [getColumbusDay](README.md#getcolumbusday)
+- [getIndigenousPeoplesDay](README.md#getindigenouspeoplesday)
 - [getEaster](README.md#geteaster)
 - [getFathersDay](README.md#getfathersday)
 - [getFederalHolidays](README.md#getfederalholidays)
@@ -55,7 +55,7 @@ npm i date-fns-holiday-us date-fns
 
 ### Holiday
 
-Ƭ **Holiday**: ``"christmas"`` \| ``"easter"`` \| ``"halloween"`` \| ``"valentinesDay"`` \| ``"mothersDay"`` \| ``"columbusDay"`` \| ``"independenceDay"`` \| ``"presidentsDay"`` \| ``"laborDay"`` \| ``"veteransDay"`` \| ``"thanksgiving"`` \| ``"newYearsEve"`` \| ``"martinLutherKingJrDay"`` \| ``"newYearsDay"`` \| ``"fathersDay"`` \| ``"memorialDay"`` \| ``"goodFriday"`` \| ``"juneteenth"``
+Ƭ **Holiday**: ``"christmas"`` \| ``"easter"`` \| ``"halloween"`` \| ``"valentinesDay"`` \| ``"mothersDay"`` \| ``"indigenousPeoplesDayDay"`` \| ``"independenceDay"`` \| ``"presidentsDay"`` \| ``"laborDay"`` \| ``"veteransDay"`` \| ``"thanksgiving"`` \| ``"newYearsEve"`` \| ``"martinLutherKingJrDay"`` \| ``"newYearsDay"`` \| ``"fathersDay"`` \| ``"memorialDay"`` \| ``"goodFriday"`` \| ``"juneteenth"``
 
 #### Defined in
 
@@ -113,9 +113,9 @@ ___
 
 ___
 
-### getColumbusDay
+### getIndigenousPeoplesDay
 
-▸ **getColumbusDay**(`year`): `Date`
+▸ **getIndigenousPeoplesDay**(`year`): `Date`
 
 #### Parameters
 
