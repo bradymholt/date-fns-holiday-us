@@ -6,16 +6,9 @@ ${description.replace("date-fns", "`date-fns`")}
 ## Install
 
 \`\`\`
-yarn add ${name} ${Object.keys(peerDependencies).join(" ")}
-\`\`\`
-
-or with npm:
-
-\`\`\`
-npm i ${name} ${Object.keys(peerDependencies).join(" ")}
+npm i ${name}}
 \`\`\`
 
 ${content}
 
-&copy; 2020 ${author}
 `;

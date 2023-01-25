@@ -13,7 +13,7 @@ const readmePath = path.join(basePath, "README.md");
 
 console.log(chalk.green("1. Parsing Typescript source..."));
 exec(
-  "yarn typedoc  --readme none --hideBreadcrumbs --out docs src",
+  "npx typedoc  --readme none --hideBreadcrumbs --out docs src",
   {
     cwd: basePath,
   },
@@ -42,7 +42,7 @@ exec(
       );
 
       console.log(chalk.green("3. Cleaning up..."));
-      exec("yarn rimraf docs", { cwd: basePath }, (err) => {
+      exec("npm run rimraf docs", { cwd: basePath }, (err) => {
         if (err) {
           console.warn("Error deleting temporary docs directory");
         }
