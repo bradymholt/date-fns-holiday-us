@@ -33,7 +33,7 @@
     "build": "tsup",
     "test": "jest",
     "lint": "eslint ./src",
-    "docs": "node scripts/docs",
+    "docs": "node scripts/docs.cjs",
     "prepublishOnly": "npm run build && npm run docs"
   },
   "husky": {

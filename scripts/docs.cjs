@@ -3,7 +3,7 @@ const fs = require("fs");
 const { exec } = require("child_process");
 const chalk = require("chalk");
 
-const readmeTemplate = require("../readme");
+const readmeTemplate = require("../readme.cjs");
 const pkg = require("../package.json");
 
 const basePath = path.join(__dirname, "..");
