@@ -339,3 +339,17 @@ export function isFederalHoliday(date: Date): boolean {
 export function isBankHoliday(date: Date): boolean {
   return isInHolidayList(date, getBankHolidays);
 }
+
+export function isDateAHoliday(date: Date, holidaysToInclude: Array<Holiday>): boolean {
+  const isAHoliday = isInHolidayList(date, (year: number) => {
+    const allHolidaysThisYear = getHolidays(year);
+    return Object.keys(getHolidays(year))
+        .filter((holiday) => holidaysToInclude.includes(holiday as Holiday))
+        .reduce((filtered, holiday) => {
+            filtered[holiday as Holiday] = allHolidaysThisYear[holiday as Holiday];
+            return filtered;
+        }, {} as Partial<Holidays>);
+  });
+
+  return isAHoliday;
+}
