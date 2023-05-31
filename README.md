@@ -41,6 +41,7 @@ npm i us-holidays-helper
 - [getValentinesDay](README.md#getvalentinesday)
 - [getVeteransDay](README.md#getveteransday)
 - [isBankHoliday](README.md#isbankholiday)
+- [isDateAHoliday](README.md#isdateaholiday)
 - [isFederalHoliday](README.md#isfederalholiday)
 - [isHoliday](README.md#isholiday)
 - [isInHolidayList](README.md#isinholidaylist)
@@ -524,6 +525,27 @@ ___
 #### Defined in
 
 [index.ts:339](https://github.com/bradymholt/us-holidays-helper/blob/main/src/index.ts#L339)
+
+___
+
+### isDateAHoliday
+
+▸ **isDateAHoliday**(`date`, `holidaysToInclude`): `boolean`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `date` | `Date` |
+| `holidaysToInclude` | [`Holiday`](README.md#holiday)[] |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+[index.ts:343](https://github.com/bradymholt/us-holidays-helper/blob/main/src/index.ts#L343)
 
 ___
 
